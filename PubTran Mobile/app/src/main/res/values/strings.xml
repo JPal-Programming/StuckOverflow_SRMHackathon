@@ -6,8 +6,6 @@
     </string>
     <string name="title_activity_maps">Map</string>
     <string name="sign_out">sign_out</string>
-    <string android:name="com.twitter.sdk.android.CONSUMER_KEY" name="api_key">OozIn5stNMUyoRo7LzZZuKpTs</string>
-    <string android:name="com.twitter.sdk.android.CONSUMER_SECRET" name="api_secret">DiiuxiDA55p1Fq2tbyalme12iUxtYYOQGWdHz19tYFten28Ffe</string>
     <string name="facebook_app_id">1237775123407437</string>
     <string name="fb_login_protocol_scheme">fb1237775123407437</string>
     <string name="title_activity_nearby_vehicles">NearbyVehiclesActivity</string>
