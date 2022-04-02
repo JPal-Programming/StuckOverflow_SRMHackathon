@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pathway_container"
+    android:background="@color/white"
+    tools:context=".PathwayActivity"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/primary_app_logo_cropped"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_bold"
+        android:text="Build a better tomorrow by creating infrastructure today."
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <RelativeLayout
+        android:id="@+id/google_signIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@drawable/white_border_rounded"
+        android:layout_marginBottom="10dp"
+        android:focusable="true">
+
+        <!-- ICON -->
+        <TextView
+            android:id="@+id/username_input2"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Continue with Google"
+            android:textColor="#444444"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/username_icon2"
+            android:layout_width="23dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="27dp"
+            android:src="@drawable/google" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_border_rounded"
+        android:layout_marginBottom="10dp">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebook_default_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <!-- ICON -->
+        <TextView
+            android:id="@+id/username_input3"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Continue with Facebook"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/username_icon3"
+            android:layout_width="33dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:src="@drawable/facebook" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email_container"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/email_login"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/white_border_rounded"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="sendLogin"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Sign In"
+            android:textColor="#3B8A7F"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/email_signup"
+            android:layout_gravity="center"
+            android:background="@drawable/teal_border_rounded"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="sendSignup"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:layout_alignParentEnd="true"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/signup_string"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_marginTop="40dp"/>
+
+</LinearLayout>
