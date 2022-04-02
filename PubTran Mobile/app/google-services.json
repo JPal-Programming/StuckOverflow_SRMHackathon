@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "199556728554",
+    "project_id": "pubtran-f593f",
+    "storage_bucket": "pubtran-f593f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199556728554:android:b792f888523a24c574b993",
+        "android_client_info": {
+          "package_name": "com.bbobj.pubtran"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199556728554-9679uumnjn2tg4ejmrdrdbus028bksnk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bbobj.pubtran",
+            "certificate_hash": "5a247339a671bc187a1bcafcf144baaf69e3ae1e"
+          }
+        },
+        {
+          "client_id": "199556728554-fdumj15d2n61ll9s5cq2nj16226hh8ck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClb7Xz2fmXFC7n_IXBstLGD5i3qsGZ6sk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199556728554-fdumj15d2n61ll9s5cq2nj16226hh8ck.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

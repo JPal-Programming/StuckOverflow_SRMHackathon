@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/explore"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_search_24_primary"
+        android:title="Explore"
+        android:iconTint="@color/green"/>
+    <item
+        android:id="@+id/check_in"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_my_location_24_primary"
+        android:title="Share"/>
+    <item
+        android:id="@+id/settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_settings_24_primary"
+        android:title="Settings"/>
+</menu>
