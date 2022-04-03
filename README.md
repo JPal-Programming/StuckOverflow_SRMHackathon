@@ -22,10 +22,10 @@ The NodeJS has multiple functions:
 
 1. Scraping the web for data about the stops:
 
-  * The client searches for the vehicle name, along with several other keywords to optimize search results.
-  * The top search results are scraped for stop names
-  * The Google Places and GeoCache APIs are used to get precise locations for each stop.
-  * The stops are added to the database along with estimated times of arrival, etc.
+   * The client searches for the vehicle name, along with several other keywords to optimize search results.
+   * The top search results are scraped for stop names
+   * The Google Places and GeoCache APIs are used to get precise locations for each stop.
+   * The stops are added to the database along with estimated times of arrival, etc.
   
 2. Optimizing estimated times of arrival:
   -The speed based on timestamps and geoposition is calculated.
