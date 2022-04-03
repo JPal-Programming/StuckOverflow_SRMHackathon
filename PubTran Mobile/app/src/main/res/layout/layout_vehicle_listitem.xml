@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_gravity="bottom"
+    android:id="@+id/vehicle_container">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardMaxElevation="2dp"
+        app:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:background="@drawable/vehicle_header_gradient">
+
+                    <LinearLayout
+                        android:id="@+id/src_container"
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingStart="20dp">
+
+                        <TextView
+                            android:id="@+id/tv_currentStop"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Aurora"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="17sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_toEndOf="@id/src_container"
+                        android:layout_toStartOf="@+id/destination_container"
+                        android:gravity="center"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="43 mi"
+                            android:textSize="11sp"
+                            android:textAlignment="center"
+                            android:id="@+id/tv_stopDistance"
+                            android:layout_marginBottom="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"/>
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="18dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_baseline_arrow_forward_ios_white_24"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:text="2h 28m"
+                            android:textSize="11sp"
+                            android:id="@+id/tv_travelMinutes"
+                            android:layout_marginTop="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/destination_container"
+                        android:paddingEnd="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Union Station"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:id="@+id/tv_nextStop"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="-10dp"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_access_time_24"
+                        android:layout_marginEnd="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3h 12m  |  "
+                        android:id="@+id/tv_totalMinutes"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 stops left"
+                        android:id="@+id/tv_stopsLeft"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardBackgroundColor="@color/danger"
+                        android:id="@+id/cv_status">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Delayed by 30 min"
+                                android:textAlignment="center"
+                                android:textColor="@color/textDanger"
+                                android:id="@+id/tv_status"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BNSF Chicago Subdivision"
+                android:layout_margin="15dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:id="@+id/tv_name"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
