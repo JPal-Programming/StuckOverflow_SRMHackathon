@@ -28,8 +28,9 @@ The NodeJS has multiple functions:
    * The stops are added to the database along with estimated times of arrival, etc.
   
 2. Optimizing estimated times of arrival:
-  -The speed based on timestamps and geoposition is calculated.
-  -This is used to calculate and update ETAs
+  
+    * The speed based on timestamps and geoposition is calculated.
+    * This is used to calculate and update ETAs
 
 
 
