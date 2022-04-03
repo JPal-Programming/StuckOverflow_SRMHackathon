@@ -10,9 +10,25 @@ The app is based on the distribution of data sourced from individual users. When
 
 **Front-end Client:** Android Mobile
 
+The main function of the mobile client is to serve as the user interface. It can update the location of vehicles stored in the server and display the vehicles close to the user.
+
 **Back-end Server:** Firebase Firestore Cloud Database
 
+The Firestore database stores all data sent by the front-end and middle-end clients. I chose Firebase because it was especially easy to implement with NodeJS and Android compared to other cloud database solutions.
+
 **Middle-end:** NodeJS Web Scraper
+
+The NodeJS has multiple functions:
+
+1. Scraping the web for data about the stops:
+  -The client searches for the vehicle name, along with several other keywords to optimize search results.
+  -The top search results are scraped for stop names
+  -The Google Places and GeoCache APIs are used to get precise locations for each stop.
+  -The stops are added to the database along with estimated times of arrival, etc.
+  
+2. Optimizing estimated times of arrival:
+  -The speed based on timestamps and geoposition is calculated.
+  -This is used to calculate and update ETAs
 
 
 
