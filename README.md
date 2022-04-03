@@ -18,7 +18,7 @@ The Firestore database stores all data sent by the front-end and middle-end clie
 
 **Middle-end:** NodeJS Web Scraper
 
-The NodeJS has multiple functions:
+The NodeJS script has multiple functions:
 
 1. Scraping the web for data about the stops:
 
